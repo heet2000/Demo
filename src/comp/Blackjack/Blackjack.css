@@ -1,0 +1,334 @@
+.player{
+    display: grid;
+    grid-template-areas:
+    'header header header header header header header header header header header header'
+    'user1 user1 user1 user2 user2 user2 user3 user3 user3 user4 user4 user4';
+    gap: 10px;
+  }
+  .grid-item1 {
+    grid-area: header;
+    position:absolute;
+    top:33%;
+    left:33%;
+  }
+  .grid-item2{
+    grid-area: user1;
+    width:fit-content;
+    position:absolute;
+    top:8%;
+    left:1%;
+  }
+  .grid-item3{
+    grid-area: user2;
+    position:absolute;
+    top:8%;
+    right:1%;
+  }
+  .grid-item4{
+    grid-area: user3;
+    position:absolute;
+    top:70%;
+    right:1%;
+  }
+  .grid-item5{
+    grid-area: user4;
+    position:absolute;
+    top:70%;
+    left:1%;
+  }
+  .card {
+    width: 100px;
+    height: 147px;
+    margin: 10px;
+    padding: 0.5em 1em 1em 1.5em;
+    background:rgba(256,256,256,1);
+    border-radius: 6px;
+    box-shadow: 0px 2px 20px -4px black;
+    cursor: default;
+    color:black;
+  }
+  
+  .hiddenCard {
+    width: 100px;
+    height: 147px;
+    margin: 10px;
+    padding: 0.5em 1.5em;
+    background:rgba(256,256,256,1);
+    border: 5px solid white;
+    border-radius: 6px;
+    box-shadow: 0px 2px 20px -4px black;
+    cursor: default;
+    color:black;
+    text-align:center;
+    padding-top:20%;
+    padding-right:20%;
+  }
+  
+  .black {
+    color: black;
+  }
+  
+  .red {
+    color: red;
+  }
+  
+  .valueis {
+    font-size: 130%;
+    position:relative;
+    top:-10%;
+    left:-30%;
+  }
+  
+  .valuerev {
+    font-size: 130%;
+    position:relative;
+    margin-top:-25%;
+    bottom:10%;
+    margin-left:65%;
+    transform:rotate(180deg);
+  }
+  .suit {
+    font-size: 400%;
+    margin: -50px -150px;
+    padding:25px;
+    text-align: center;
+  }
+  
+  @media screen and (max-width: 992px) {
+    .card {
+      width: 70px;
+      height: 15px;
+    }
+  
+    .hiddenCard {
+      width: 60px;
+      height: 170px;
+    }
+  
+    .value {
+      font-size: 400%;
+    }
+  
+    .valuerev {
+      font-size: 400%;
+    }
+    .suit {
+      font-size: 400%;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .card {
+      width: 60px;
+      height: 80px;
+      padding: 5px 10px;
+      color:red;
+    }
+  
+    .hiddenCard {
+      width: 41px;
+      height: 96px;
+      padding: 5px 10px;
+      border: 2px solid white;
+    }
+  
+    .value {
+      font-size: 250%;
+    }
+  
+    .suit {
+      font-size: 250%;
+      padding-top:0px;
+    }
+  }
+  .controlsContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0.5em 1em 1em 1em;
+  }
+  
+  .betContainer {
+    display: block;
+    align-items: center;
+    color: white;
+    margin: 1 0.5em;
+    padding: 0.5em 7em;
+    width: 60%;
+    height: fit-content;
+    top: 70%;
+    left: 25%;
+    border-radius: 20px;
+    text-align: center;
+    position: absolute;
+    background: rgba(0,0,0,.3);
+    box-shadow: 0px 0px 20px -2px black;
+    }
+  
+  .MuiButton-root {
+    color: rgba(126, 80, 80, 1);
+    padding: 6% 6%;
+    font-size: 3.25rem;
+    min-width: 64px;
+    background: yellowgreen;
+    box-sizing: border-box;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 500;
+    line-height: 1.75;
+    border-radius: 4px;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    position: absolute;
+    top:90%;
+    left: 15%;
+  }
+
+  .inputStyle {
+    width: 275%;
+    flex-grow: 1;
+    margin: 0 0 0 0.5em;
+    font-size: 123%;
+    font-weight: 500;
+    height: 30px;
+    text-align: left;
+    margin: 5px;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    background: white;
+    color: black;
+    border-radius: 5px;margin-top: 10%;
+    margin: 111% -98% -1%;
+    }
+  
+  .inputError {
+    width: 1px;
+    flex-grow: 1;
+    margin: 0 0 0 0.5em;
+    font-size: 200%;
+    text-align: right;
+    position: relative;
+    top: 15%;
+    margin: 5px;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    background: black;
+    color: red;
+  }
+
+  .heading{
+    font-size: 200%;
+    position: absolute;
+    top:5%;
+    left: 30%;
+    justify-content: center;
+  }
+  
+  @media screen and (max-width: 992px) {
+    .betContainer {
+      width: 50%;    
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .betContainer {
+      width: 70%;        
+    }
+    .betContainer h1 {
+      font-size: 100%;        
+    }
+    .betContainer input {
+      font-size: 125%;        
+    }
+  }
+  .handContainer {
+    color: white;
+    display: flex;
+    font-size:larger;
+    align-items: center;
+    flex-direction: column;
+    margin: 0.5em;
+  }
+  
+  .cardContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: white;
+  }
+  
+  .title {
+    text-align: center;
+    color:black
+  }
+  
+  @media screen and (max-width: 600px) {
+    .title {
+      font-size: 125%;
+      color: black;
+    }
+  }
+
+  .statusContainer {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .status {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin: 0.5rem 15rem 0.5rem 4rem;
+    width:fit-content;
+    left:10%;
+    height: 4vh;
+    background: rgba(0,0,0,.6);
+    border: 1px solid black;
+    border-radius: 4px;
+    box-shadow: 0px 1px 10px rgb(0 0 0);
+    font-size:5px;
+    text-align:center;
+    font-weight:200;
+    padding:12% auto;
+
+  }
+  
+  .balance {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin: 0.5rem 1rem 0.5rem 1.5rem;
+    width: fit-content;
+    height:12.5%;
+    padding: 1% 5%;
+    background: rgba(0,0,0,.6);
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size:10px;
+    font-weight:100;
+    box-shadow: 0px 1px 10px rgb(0 0 0);
+    position:absolute;
+    right:90px;
+  }
+  
+  .value {
+    color:greenyellow;
+    text-align: center;
+    font-size:25px;
+  }
+  
+  @media screen and (max-width: 992px) {
+    .value {
+      font-size: 100%;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .value {
+      font-size: 50%;
+    }
+  }

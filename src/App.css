@@ -1,0 +1,178 @@
+body{
+  width:100% !important;
+  height: 100vh !important;
+  margin:0;
+  padding:0;
+}
+:root{
+  width:100% !important;
+  height: 100%  !important;
+  margin:0;
+  padding:0;
+}
+
+.cards{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-image: url('https://cdn.discordapp.com/attachments/938397372105523225/946670366300991489/game.jpg');
+  background-size: cover;
+  padding-left: -15rem;
+}
+
+.type{
+  display: flex;
+  flex-direction: row;
+}
+
+.gameCard{
+  width: 30vw;
+  height: 25vh;
+}
+
+.MuiGrid-spacing-xs-1 > .MuiGrid-item {
+  padding: 0px;
+}
+
+.MuiTypography-h4 {
+  font-size: 2.125rem;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  line-height: 1.235;
+  letter-spacing: 0.00735em;
+  margin-bottom: 5%;
+}
+
+.form {
+  padding: 1%;
+  border-radius: 5%;
+  justify-self: center;
+  align-self: center;
+  margin-left: 25em;
+  text-align: center;
+  background-color: rgba(38, 63, 65, 1);
+  margin-left:35%;
+  width: 100%;
+  color: black;
+}
+
+.makeStyles-paper-27 {
+  margin: 55px 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.makeStyles-paper-42 {
+  margin: 24px 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.MuiButton-containedPrimary {
+  color: #fff;
+  background-color: #3f51b5;
+  position: relative;
+  left: 1%;
+  top: 1%;
+}
+
+.img{
+  max-height: 200px;
+  max-width: 260px;
+  justify-self: center;
+  border-radius: 5%;
+}
+
+.items{
+  font-size: larger;
+  font-weight: 400;
+  padding: 10px 2px;
+}
+
+
+element.style {
+  margin: 0% 0%;
+  width: 30%;
+}
+
+.drawer{
+  background-color: black;
+  margin-bottom: 140px;
+  display: flex;
+  flex-direction: column;
+}
+
+.array{
+  margin: 9px 0px;
+  font-size: larger;
+}
+
+.search{
+  background-color: aliceblue;
+  height: 30px;
+  border-radius: 0.66rem;
+  width: 300px;
+  justify-self: center;
+  text-indent: 5%;
+}
+
+.form1 {
+  padding: 1rem;
+  background:transparent;
+  height: 56vh;
+  width: 25vw;
+  margin-left: 2%;
+  display: flex;
+  flex-direction: column;
+}
+.btn{
+    width: 68%;
+}
+
+.form3 {
+  justify-self: center;
+  align-self: center;
+  background:transparent;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  background-image: url('./1.jpg');
+  background-size: cover;
+}
+
+.form2 {
+  padding: 1rem;
+  justify-self: center;
+  align-self: center;
+  background:transparent;
+  height: 25vh;
+  width: 20vw;
+  margin:2% 2% 3% 2% ;
+  display: flex;
+  flex-direction: column;
+}
+
+.form4 {
+  padding: 2rem;
+  background:rgba(38, 63, 65, 1);
+  height: 35vh;
+  width: 20vw;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.form5 {
+  padding: 2rem;
+  background:rgba(38, 63, 65, 1);
+  height: 30vh;
+  width: 50vw;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+}
